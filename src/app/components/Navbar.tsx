@@ -8,7 +8,7 @@ import {
   faBars,
   faTimes,
 } from "@fortawesome/free-solid-svg-icons";
-import CodeNexLogo from "/Users/mpxupd/Documents/WEB-DEV-Domain/public/assets/codenex-logo.png";
+import CodeNexLogo from "../assets/codenex-logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
