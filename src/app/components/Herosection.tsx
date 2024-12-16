@@ -17,25 +17,6 @@ const Herosection = () => {
 
   return (
     <div className="relative">
-      // Navbar 
-      <nav className="fixed top-0 left-0 w-full bg-black text-white z-20 p-4">
-        <div className="flex justify-between items-center">
-          <div className="text-xl font-bold">CodeNex</div>
-          <div className="space-x-6">
-            <a href="#home" className="text-white hover:text-gray-400">
-              Home
-            </a>
-            <a href="#about" className="text-white hover:text-gray-400">
-              About
-            </a>
-            <a href="#contact" className="text-white hover:text-gray-400">
-              Contact
-            </a>
-          </div>
-        </div>
-      </nav>
-
-      // Hero Section 
       <div className="h-screen w-full bg-black flex items-center justify-center relative">
         <motion.div
           className="absolute transform -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center items-center text-center"
