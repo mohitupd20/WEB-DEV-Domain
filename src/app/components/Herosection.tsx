@@ -1,6 +1,6 @@
-'use client';  
-import { motion, useTransform, useScroll } from 'framer-motion';
-import { useEffect, useState } from 'react';
+"use client";
+import { motion, useTransform, useScroll } from "framer-motion";
+import { useEffect, useState } from "react";
 
 const Herosection = () => {
   const { scrollYProgress } = useScroll();
@@ -17,25 +17,6 @@ const Herosection = () => {
 
   return (
     <div className="relative">
-      // Navbar 
-      <nav className="fixed top-0 left-0 w-full bg-black text-white z-20 p-4">
-        <div className="flex justify-between items-center">
-          <div className="text-xl font-bold">CodeNex</div>
-          <div className="space-x-6">
-            <a href="#home" className="text-white hover:text-gray-400">
-              Home
-            </a>
-            <a href="#about" className="text-white hover:text-gray-400">
-              About
-            </a>
-            <a href="#contact" className="text-white hover:text-gray-400">
-              Contact
-            </a>
-          </div>
-        </div>
-      </nav>
-
-      // Hero Section 
       <div className="h-screen w-full bg-black flex items-center justify-center relative">
         <motion.div
           className="absolute transform -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center items-center text-center"
@@ -57,7 +38,7 @@ const Herosection = () => {
 
           {/* Logo */}
           <motion.img
-            src="/codenexlogo.png" 
+            src="/codenexlogo.png"
             alt="CodeNex Logo"
             className="mx-auto w-3/4 sm:w-1/2 lg:w-1/4 xl:w-1/5 mt-4"
             style={{ scale, opacity }}
@@ -70,7 +51,9 @@ const Herosection = () => {
           <div className="text-center">
             <h2 className="text-4xl font-bold mb-4">Empowering Innovation</h2>
             <p className="text-lg max-w-2xl mx-auto">
-              Where creativity meets technology, CodeNex fosters a collaborative ecosystem for budding developers and designers to innovate, grow, and transform ideas into impactful solutions.
+              Where creativity meets technology, CodeNex fosters a collaborative
+              ecosystem for budding developers and designers to innovate, grow,
+              and transform ideas into impactful solutions.
             </p>
           </div>
         </div>
