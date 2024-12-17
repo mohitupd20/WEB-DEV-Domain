@@ -85,8 +85,8 @@ const Navbar = () => {
           <Image
             src={CodenexLogo}
             alt="CodeNex"
-            width={20}
-            height={20}
+            width={48}
+            height={48}
             className="object-contain w-[48px] h-[48px]"
           />
           <div className="text-white font-[600] text-[24px] leading-[38.4px] font-['Albert_Sans']">
