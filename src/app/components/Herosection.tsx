@@ -1,6 +1,6 @@
-'use client';  
-import { motion, useTransform, useScroll } from 'framer-motion';
-import { useEffect, useState } from 'react';
+"use client";
+import { motion, useTransform, useScroll } from "framer-motion";
+import { useEffect, useState } from "react";
 
 const Herosection = () => {
   const { scrollYProgress } = useScroll();
@@ -38,7 +38,7 @@ const Herosection = () => {
 
           {/* Logo */}
           <motion.img
-            src="/codenexlogo.png" 
+            src="/codenexlogo.png"
             alt="CodeNex Logo"
             className="mx-auto w-3/4 sm:w-1/2 lg:w-1/4 xl:w-1/5 mt-4"
             style={{ scale, opacity }}
@@ -51,7 +51,9 @@ const Herosection = () => {
           <div className="text-center">
             <h2 className="text-4xl font-bold mb-4">Empowering Innovation</h2>
             <p className="text-lg max-w-2xl mx-auto">
-              Where creativity meets technology, CodeNex fosters a collaborative ecosystem for budding developers and designers to innovate, grow, and transform ideas into impactful solutions.
+              Where creativity meets technology, CodeNex fosters a collaborative
+              ecosystem for budding developers and designers to innovate, grow,
+              and transform ideas into impactful solutions.
             </p>
           </div>
         </div>

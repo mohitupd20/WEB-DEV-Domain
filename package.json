@@ -9,7 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@fortawesome/free-solid-svg-icons": "^6.7.1",
+=======
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+>>>>>>> 19276d510378cb487f1bfaa2a7ff4d143562af9c
     "@fortawesome/react-fontawesome": "^0.2.2",
     "framer-motion": "^11.14.4",
     "next": "15.1.0",
