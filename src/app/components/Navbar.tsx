@@ -8,7 +8,7 @@ import {
   faBars,
   faTimes,
 } from "@fortawesome/free-solid-svg-icons";
-const CodenexLogo="/codenexlogo.png";
+import CodenexLogo from "../assets/codenex-logo.png";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -24,8 +24,6 @@ const Navbar = () => {
           <Image
             src={CodenexLogo}
             alt="Codenex"
-            width={58}
-            height={58}
             className="object-contain w-[58px] h-[58px]"
           />
           <div className="w-[128px] h-[38px] text-white font-[600] text-[32px] leading-[38.4px] font-['Albert_Sans']">
