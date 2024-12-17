@@ -8,12 +8,7 @@ import {
   faBars,
   faTimes,
 } from "@fortawesome/free-solid-svg-icons";
-<<<<<<< HEAD
 const CodenexLogo="/codenexlogo.png";
-=======
-import CodeNexLogo from "../assets/codenex-logo.png";
-
->>>>>>> 19276d510378cb487f1bfaa2a7ff4d143562af9c
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
