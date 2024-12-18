@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function AboutUs() {
   return (
     <div className="container mx-auto px-4 py-12 bg-white ">
-      <h1 className="text-4xl md:text-5xl font-bold text-center mb-12">About Us</h1>
+      <h1 className="text-4xl md:text-5xl text-black text-center mb-12">About Us</h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Who we Are? Card */}
@@ -12,16 +12,16 @@ export default function AboutUs() {
           <div className="relative p-6 h-full flex flex-col justify-end">
             {/* SVG Placeholder for Layers Icon */}
             <img
-              src="" // Use your SVG file here
+              src="assets/Vector.svg" 
               alt="Layers Icon"
               className="text-white/80 absolute top-6 right-6 w-6 h-6"
             />
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold">Who we Are?</h2>
+              <h2 className="text-3xl font-bold">Who we are?</h2>
               <p className="text-gray-300 text-sm">
                 A student-driven club under the Network and Comm...
               </p>
-              <button className="text-white border-white border-2 px-4 py-2 rounded-md hover:bg-white/10 mt-4">
+              <button className="text-white border-white border-2 px-4 py-2 rounded-2xl hover:bg-white/10 mt-4">
                 Read more
               </button>
             </div>
@@ -29,22 +29,23 @@ export default function AboutUs() {
         </div>
 
         {/* Our Vision and Mission Card */}
-        <div className="bg-[#D6F3BA] rounded-3xl overflow-hidden shadow-lg">
+        <div className="bg-[#CBF48F] rounded-3xl overflow-hidden shadow-lg">
           <div className="relative p-6 h-full flex flex-col justify-end">
             {/* SVG Placeholder for Network Icon */}
             <img
-              src="" // Use your SVG file here
+              src="assets/icon1.png" 
               alt="Network Icon"
-              className="text-black/80 absolute top-6 right-6 w-6 h-6"
+              className="text-black/80 absolute top-6 right-6 w-6 h-6 "
             />
             <div className="space-y-2">
               <h2 className="text-2xl font-bold text-black">Our Vision and Mission?</h2>
               <p className="text-gray-700 text-sm">
-                To inspire technological advancements through collabor...
-              </p>
-              <button className="text-black border-black border-2 px-4 py-2 rounded-md hover:bg-black/10 mt-4">
+                To inspire tech advancements through..
+              </p> 
+              <button className="text-black border-black border-2 px-2 py-2 bottom-4 rounded-2xl absolute right-6 hover:bg-black/10 mt-4">
                 Read more
               </button>
+             
             </div>
           </div>
         </div>
@@ -54,16 +55,16 @@ export default function AboutUs() {
           <div className="relative p-6 h-full flex flex-col justify-end">
             {/* SVG Placeholder for Bookmark Icon */}
             <img
-              src="" // Use your SVG file here
+              src="assets/icon2.png" 
               alt="Bookmark Icon"
               className="text-black/80 absolute top-6 right-6 w-6 h-6"
             />
             <div className="space-y-2">
-              <h2 className="text-2xl font-bold">Why Choose Us?</h2>
+              <h2 className="text-2xl font-bold text-black">Why Choose Us?</h2>
               <p className="text-gray-700 text-sm">
                 We foster a dynamic environm.....
               </p>
-              <button className="text-black border-black border-2 px-4 py-2 rounded-md hover:bg-black/10 mt-4">
+              <button className="text-black border-black border-2 px-2 py-2 bottom-4 rounded-2xl absolute right-6 hover:bg-black/10 mt-4">
                 Read more
               </button>
             </div>
@@ -76,16 +77,16 @@ export default function AboutUs() {
             <div className="relative p-6 h-full flex flex-col justify-end">
               {/* SVG Placeholder for X Icon */}
               <img
-                src="" // Use your SVG file here
+                src="assets/icon3.svg" 
                 alt="X Icon"
                 className="text-black/80 absolute top-6 right-6 w-6 h-6"
               />
               <div className="space-y-2">
-                <h2 className="text-2xl font-bold">What we do?</h2>
+                <h2 className="text-2xl font-bold text-black">What we do?</h2>
                 <p className="text-gray-700 text-sm">
                   We provide a platform for students.....
                 </p>
-                <button className="text-black border-black border-2 px-4 py-2 rounded-md hover:bg-black/10 mt-4">
+                <button className="text-black border-black border-2 px-4 py-2 rounded-2xl hover:bg-black/10 mt-4">
                   Read more
                 </button>
               </div>
