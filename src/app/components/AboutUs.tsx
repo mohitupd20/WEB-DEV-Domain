@@ -11,10 +11,12 @@ export default function AboutUs() {
         <div className="bg-black text-white rounded-3xl overflow-hidden shadow-lg">
           <div className="relative p-6 h-full flex flex-col justify-end">
             {/* SVG Placeholder for Layers Icon */}
-            <img
-              src="assets/Vector.svg" 
+            <Image
+              src="assets/Vector.svg"
               alt="Layers Icon"
-              className="text-white/80 absolute top-6 right-6 w-6 h-6"
+              width={6}
+              height={6}
+              className="text-white/80 absolute top-6 right-6"
             />
             <div className="space-y-2">
               <h2 className="text-3xl font-bold">Who we are?</h2>
@@ -32,10 +34,12 @@ export default function AboutUs() {
         <div className="bg-[#CBF48F] rounded-3xl overflow-hidden shadow-lg">
           <div className="relative p-6 h-full flex flex-col justify-end">
             {/* SVG Placeholder for Network Icon */}
-            <img
-              src="assets/icon1.png" 
+            <Image
+              src="assets/icon1.png"
               alt="Network Icon"
-              className="text-black/80 absolute top-6 right-6 w-6 h-6 "
+              width={6}
+              height={6}
+              className="text-black/80 absolute top-6 right-6"
             />
             <div className="space-y-2">
               <h2 className="text-2xl font-bold text-black">Our Vision and Mission?</h2>
@@ -54,10 +58,12 @@ export default function AboutUs() {
         <div className="bg-[#FFE17B] rounded-3xl overflow-hidden shadow-lg">
           <div className="relative p-6 h-full flex flex-col justify-end">
             {/* SVG Placeholder for Bookmark Icon */}
-            <img
+            <Image
               src="assets/icon2.png" 
               alt="Bookmark Icon"
               className="text-black/80 absolute top-6 right-6 w-6 h-6"
+              width={6}
+              height={6}
             />
             <div className="space-y-2">
               <h2 className="text-2xl font-bold text-black">Why Choose Us?</h2>
@@ -76,10 +82,12 @@ export default function AboutUs() {
           <div className="bg-gray-200 rounded-3xl overflow-hidden shadow-lg">
             <div className="relative p-6 h-full flex flex-col justify-end">
               {/* SVG Placeholder for X Icon */}
-              <img
+              <Image
                 src="assets/icon3.svg" 
                 alt="X Icon"
                 className="text-black/80 absolute top-6 right-6 w-6 h-6"
+                width={6}
+                height={6}
               />
               <div className="space-y-2">
                 <h2 className="text-2xl font-bold text-black">What we do?</h2>
