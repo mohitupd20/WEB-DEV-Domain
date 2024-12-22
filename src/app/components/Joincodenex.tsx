@@ -3,7 +3,7 @@
 import React, { useState, FormEvent } from 'react';
 import Image from 'next/image';
 
-export function Joincodenex() {
+export default function Joincodenex() {
   const [email, setEmail] = useState<string>('');
 
   const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -12,7 +12,7 @@ export function Joincodenex() {
 
   const handleJoinWaitlist = (e: FormEvent) => {
     e.preventDefault();
-    // Add your waitlist logic here
+    
     console.log('Email submitted:', email);
   };
 
