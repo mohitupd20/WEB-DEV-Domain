@@ -1,12 +1,11 @@
 import type { NextConfig } from "next";
 
-import { nodePolyfills } from 'vite-plugin-node-polyfills'
-
 const nextConfig: NextConfig = {
-  plugins: [
-    nodePolyfills(),
-  ],
-  /* config options here */
+  webpack(config) {
+    // your custom webpack configuration
+    return config;
+  },
+  // other configurations
 };
 
 export default nextConfig;
