@@ -21,7 +21,7 @@ const Navbar = () => {
         {/* Image and Text Div */}
         <div className="flex items-center gap-[10px] w-[216px] h-[58px]">
           <Image
-            src="/codenex-logo.png"
+            src="/assets/codenex-logo.png"
             alt="Codenex"
             className="object-contain w-[58px] h-[58px]"
             width={58}
@@ -82,7 +82,7 @@ const Navbar = () => {
         {/* Mobile Logo and Name */}
         <div className="flex items-center gap-[10px]">
           <Image
-            src="/codenex-logo.png"
+            src="/assets/codenex-logo.png"
             alt="CodeNex"
             width={48}
             height={48}
