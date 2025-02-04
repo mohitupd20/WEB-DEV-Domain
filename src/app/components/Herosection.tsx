@@ -38,7 +38,7 @@ const Herosection = () => {
 
           {/* Logo */}
           <motion.img
-            src="/codenexlogo.png"
+            src="/assets/codenexlogo.png"
             alt="CodeNex Logo"
             className="mx-auto w-3/4 sm:w-1/2 lg:w-1/4 xl:w-1/5 mt-4"
             style={{ scale, opacity }}

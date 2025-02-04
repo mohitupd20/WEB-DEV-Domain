@@ -1,11 +1,10 @@
-'use client';
+"use client";
 
-
-import React, { useState, FormEvent } from 'react';
-import Image from 'next/image';
+import React, { useState, FormEvent } from "react";
+import Image from "next/image";
 
 export default function Joincodenex() {
-  const [email, setEmail] = useState<string>('');
+  const [email, setEmail] = useState("");
 
   const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setEmail(e.target.value);
@@ -13,121 +12,58 @@ export default function Joincodenex() {
 
   const handleJoinWaitlist = (e: FormEvent) => {
     e.preventDefault();
-    
-    console.log('Email submitted:', email);
+    console.log("Email submitted:", email);
   };
 
   return (
-    <div suppressHydrationWarning>
-      <main className="main">
-        <section className="hero">
-          <div className="content">
-            <h1>Join CodeNex Ecosystem</h1>
-            <p>
-              Stay connected with CodeNex! For inquiries, collaborations, or
-              joining our community, reach out to us at <a href="mailto:contact@codenex.com">contact@codenex.com</a>. 
-              We&apos;re here to innovate together!
-            </p>
-            <form onSubmit={handleJoinWaitlist} className="input-group">
-              <input 
-                type="email" 
-                placeholder="Enter your E-mail" 
-                value={email}
-                onChange={handleEmailChange}
-                required
-                aria-label="Email input"
-              />
-              <button type="submit">
-                Join Waitlist
-              </button>
-            </form>
-          </div>
-
-          <div className="logo-large">
-            <Image 
-              src="/codenex-logo.png" 
-              alt="CodeNex Logo" 
-              width={382}
-              height={383}
-              priority
+    <div className="flex justify-center items-center min-h-screen bg-white px-5 pt-20">
+      <main className="w-full max-w-5xl bg-[#ffcf52] mb-10 lg:mt-24 rounded-[50px] shadow-lg p-10 flex flex-col md:flex-row items-center gap-10">
+        <div className="max-w-lg w-full text-center md:text-left">
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+            Join CodeNex Ecosystem
+          </h1>
+          <p className="text-lg text-gray-700 mb-6">
+            Stay connected with CodeNex! For inquiries, collaborations, or
+            joining our community, reach out to us at{" "}
+            <a
+              href="mailto:contact@codenex.com"
+              className="text-blue-600 underline"
+            >
+              contact@codenex.com
+            </a>
+            . We&apos;re here to innovate together!
+          </p>
+          <form
+            onSubmit={handleJoinWaitlist}
+            className="flex flex-col sm:flex-row gap-4"
+          >
+            <input
+              type="email"
+              placeholder="Enter your E-mail"
+              value={email}
+              onChange={handleEmailChange}
+              required
+              aria-label="Email input"
+              className="flex-1 p-3 border border-gray-300 rounded-full text-black text-lg"
             />
-          </div>
-        </section>
+            <button
+              type="submit"
+              className="w-full sm:w-auto px-6 py-3 bg-black text-white rounded-full text-lg transition hover:bg-gray-800"
+            >
+              Join Waitlist
+            </button>
+          </form>
+        </div>
+        <div className="w-60 h-60 md:w-96 md:h-96 flex justify-center items-center">
+          <Image
+            src="/assets/codenex-logo.png"
+            alt="CodeNex Logo"
+            width={382}
+            height={383}
+            priority
+          />
+        </div>
       </main>
-
-      <style jsx>{`
-        .main {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: calc(100vh - 100px);
-          background-color: #fff;
-          padding: 20px;
-        }
-
-        .hero {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          background-color: #ffcf52;
-          border-radius: 50px;
-          padding: 40px;
-          max-width: 1200px;
-          width: 100%;
-          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .content {
-          max-width: 50%;
-        }
-
-        h1 {
-          font-size: 2.8rem;
-          font-weight: bold;
-          margin-bottom: 20px;
-          color: #333;
-        }
-
-        p {
-          margin-bottom: 30px;
-          font-size: 1.1rem;
-          line-height: 1.5;
-          color: #666;
-        }
-
-        .input-group {
-          display: flex;
-          gap: 10px;
-        }
-
-        input {
-          padding: 15px;
-          flex: 1;
-          border: 1px solid #ccc;
-          border-radius: 50px;
-          font-size: 1rem;
-          font-family: 'Albert Sans', sans-serif;
-          color: #000;
-        }
-
-        button {
-          padding: 15px 25px;
-          background-color: #000;
-          color: #fff;
-          border: none;
-          border-radius: 20px;
-          cursor: pointer;
-          transition: background-color 0.3s ease;
-        }
-
-        button:hover {
-          background-color: #333;
-        }
-
-        .logo-large {
-          max-width: 50%;
-        }
-      `}</style>
     </div>
   );
 }
