@@ -3,19 +3,12 @@ import Image from "next/image";
 const CoreExpertise = "/assets/core-expertise.png"; // Direct path
 
 // DomainCard Component Props
-interface DomainCardProps {
-  title: string;
-  description: string;
-}
+// interface DomainCardProps {
+//   title: string;
+//   description: string;
+// }
 // Reusable DomainCard Component
-const DomainCard: React.FC<DomainCardProps> = ({ title, description }) => {
-  return (
-    <div className="bg-lime-300 text-black rounded-lg p-6 w-64 shadow-lg">
-      <h3 className="text-xl font-bold mb-2">{title}</h3>
-      <p className="text-sm">{description}</p>
-    </div>
-  );
-};
+
 // OurDomains Component
 const OurDomains: React.FC = () => {
   const domainData = [
